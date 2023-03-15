@@ -1,0 +1,143 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #F6F6F6;
+}
+
+.container {
+    max-width: 1168px;
+    padding: 0;
+}
+
+.primary-gradient-text {
+    background: -webkit-linear-gradient(#6B0D89, #8E0088);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    line-height: 32px;
+    color: #26252C;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 32px 0;
+    line-height: 24px;
+    color: #26252C;
+}
+
+.box {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.f-carousel img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#myCarousel {
+    --f-carousel-slide-height: 100%;
+    --f-carousel-spacing: 10px;
+    aspect-ratio: 653 / 512;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.f-thumbs.f-carousel__thumbs {
+    transform: translateY(-100%);
+}
+
+.f-thumbs__slide {
+    border-radius: 6px;
+    overflow: hidden;
+    aspect-ratio: 77 / 57;
+    &.is-nav-selected {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    img {
+        border-radius: 4px;
+    }
+}
+
+.f-thumbs__slide__button {
+    border-radius: 4px !important;
+}
+
+.f-thumbs__slide {
+    &.f-thumbs__slide__button {
+        border: 2px solid transparent;
+    }
+    &.is-nav-selected {
+        .f-thumbs__slide__button {
+            border: 2px solid #ffffff;
+        }
+    }
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:not(:last-child) {
+        margin-bottom: 6px;
+    }
+    span {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    span:first-child {
+        color: #58595B;
+        font-weight: 400;
+    }
+}
+
+#progress-bar-container {
+    width: 100%; 
+    height: 6px; 
+    border-radius: 1px; 
+    background: #D5D5D5;
+    margin: 16px 0 8px 0;
+    #progress-bar {
+        background: linear-gradient(to right, #6B0D89, #8E0088); 
+        width: 0%; 
+        height: 100%;
+    }
+}
+
+.btn {
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-outline {
+    border: 2px solid #7C0AA0;
+    padding: 12px 0;
+    background: -webkit-linear-gradient(#6B0D89, #8E0088);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+        background: #7809891A;
+        color: #6B0D89;
+    }
+}
+
+.btn-solid {
+    background: #CDCDCD;
+    border-radius: 4px;
+    color: #fff;
+    padding: 12px 0;
+}
+
+
+
+  
